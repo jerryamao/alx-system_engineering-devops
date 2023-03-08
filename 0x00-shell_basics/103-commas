@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -d . .. */ | sed -e 's/\/$//' | LC_COLLATE=C sort -g -f | tr '\n' ',' | sed -e 's/,$/\n/'
